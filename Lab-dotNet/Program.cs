@@ -4,7 +4,6 @@ namespace Lab_dotNet;
 
 class Program
 {
-    [SuppressMessage("ReSharper.DPA", "DPA0000: DPA issues")]
     public static void Main(string[] args)
     {
         var connectionString = "Host=localhost;Port=5432;Database=phone_calls_db;Username=postgres;Password=postgres";
@@ -12,10 +11,10 @@ class Program
         using var context = new PhoneCallsDbContext(connectionString);
 
         var users = context.Users.ToList();
-
-        foreach (var user in users)
+        
+        for (var i = 0; i < 50; i++)
         {
-            Console.WriteLine(user);
+            Console.WriteLine(users[i]);
         }
         
         var cities = context.Cities.ToList();
