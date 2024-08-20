@@ -1,0 +1,14 @@
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/bin/Debug/net8.0/Lab-dotNet
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/bin/Debug/net8.0/Lab-dotNet.deps.json
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/bin/Debug/net8.0/Lab-dotNet.runtimeconfig.json
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/bin/Debug/net8.0/Lab-dotNet.dll
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/bin/Debug/net8.0/Lab-dotNet.pdb
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.GeneratedMSBuildEditorConfig.editorconfig
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.AssemblyInfoInputs.cache
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.AssemblyInfo.cs
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.csproj.CoreCompileInputs.cache
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.dll
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/refint/Lab-dotNet.dll
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.pdb
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/Lab-dotNet.genruntimeconfig.cache
+/home/dmytro/Projects/C#/Lab-dotNet/Lab-dotNet/obj/Debug/net8.0/ref/Lab-dotNet.dll
