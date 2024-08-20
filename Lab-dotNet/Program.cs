@@ -1,40 +1,42 @@
-﻿using Lab_dotNet.entity;
-using Lab_dotNet.repository.impl;
-using Lab_dotNet.Repository.Impl;
+﻿using System.Diagnostics.CodeAnalysis;
 
 namespace Lab_dotNet;
 
 class Program
 {
+    [SuppressMessage("ReSharper.DPA", "DPA0000: DPA issues")]
     public static void Main(string[] args)
     {
-        var connectionString = "Host=localhost;Port=5432;Database=phone_calls_db;Username=postgres;Password=postgres;";
-        var userRepository = new UserRepository(connectionString);
-        var cityRepository = new CityRepository(connectionString);
-        var tariffRepository = new TariffRepository(connectionString);
-        var conversationRepository = new ConversationRepository(connectionString);
-        
-        var users = userRepository.GetAll();
-        
-        var user = userRepository.GetById(5);
-        var city = cityRepository.GetById(2);
-        var tariff = tariffRepository.GetById(3);
-        var conversation = conversationRepository.GetById(7);
+        var connectionString = "Host=localhost;Port=5432;Database=phone_calls_db;Username=postgres;Password=postgres";
 
-        userRepository.Save(new User(
-            "dima1",
-            "badichel1",
-            "viacheslavovich1",
-            12345561,
-            "My home address1"));
+        using var context = new PhoneCallsDbContext(connectionString);
+
+        var users = context.Users.ToList();
+
+        foreach (var user in users)
+        {
+            Console.WriteLine(user);
+        }
         
-        var users1 = userRepository.GetAll();
-        
-        Console.WriteLine($"Retrieved {users.Rows.Count} users.");
-        Console.WriteLine(user);
-        Console.WriteLine(city);
-        Console.WriteLine(tariff);
-        Console.WriteLine(conversation);
-        Console.WriteLine($"Retrieved {users1.Rows.Count} users1.");
+        var cities = context.Cities.ToList();
+
+        foreach (var city in cities)
+        {
+            Console.WriteLine(city);
+        }
+
+        var conversations = context.Conversations.ToList();
+
+        foreach (var conversation in conversations)
+        {
+            Console.WriteLine(conversation);
+        }
+
+        var tariffs = context.Tariffs.ToList();
+
+        foreach (var tariff in tariffs)
+        {
+            Console.WriteLine(tariff);
+        }
     }
 }
